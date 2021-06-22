@@ -80,13 +80,13 @@
                 myCal = "";
             }
             if (myValue == "=") {
-                //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+               
                 myCal = eval(myCal);
             }
             else {
-                //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+               
                 let lastChar = myCal.substring(myCal.length - 1);
-                //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+               
                 if (myOper.includes(myValue)) {
                     if (myOper.includes(lastChar)) {
                         myCal = myCal.substring(0, myCal.length - 1);
